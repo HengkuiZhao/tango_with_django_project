@@ -8,5 +8,5 @@ def index(request):
 
 
 def about(request):
-    context_dict = {'name': 'Henkui Zhao'}
+    context_dict = {'name': 'Hengkui Zhao'}
     return render(request, 'rango/about.html', context=context_dict)
