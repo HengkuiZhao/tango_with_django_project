@@ -1,6 +1,6 @@
 db.sqlite3
 .pyc
-__pyche__/
+__pycahe__/
 *.key
 tests_chapter3.py
 tests_chapter4.py
