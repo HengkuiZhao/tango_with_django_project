@@ -46,7 +46,6 @@ class Chapter6PopulationScriptTest(TestCase):
         pages = Page.objects.filter()
 
         for page in pages:
-			#print(page)
             self.assertTrue(page.views > 0, f"{FAILURE_HEADER}The page '{page.title}' has a negative/zero view count. The exercises for Chapter 6 stated that all view values must be greater than zero. Update your population script, and try again.{FAILURE_FOOTER}")
 
 
@@ -130,8 +129,7 @@ class Chapter6IndexViewTests(TestCase):
             expected_pages_li.append(page_li_entries_regex[expected_page.title])
         
         # Now we have the five entries regex to match, we can loop over and check each one exists.
-        
-		for expected_regex in expected_pages_li:
+        for expected_regex in expected_pages_li:
             print(self.content)
             self.assertTrue(re.search(expected_regex, self.content), f"{FAILURE_HEADER}Checks for the top five pages in the index() view's response failed. Check you are using the correct list of objects, the correct HTML markup, and try again. '{expected_regex}'{FAILURE_FOOTER}")
         
