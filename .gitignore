@@ -2,5 +2,4 @@ db.sqlite3
 .pyc
 __pyche__/
 *.key
-thumbs.db
 ^tests_chapter[0-9][0-9]*.py
