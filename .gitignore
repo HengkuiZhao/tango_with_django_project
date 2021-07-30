@@ -1,0 +1,5 @@
+db.sqlite3
+__pycache__
+/*.pyc
+.vscode
+/^tests_Chapter[1-9]0*.py
